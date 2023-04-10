@@ -22,7 +22,7 @@ body {
     grid-template-rows: auto;
     margin: 72px 24px;
     font-family: Barlow Semi Condensed, sans-serif;
-    line-height: 125%;
+    line-height: 110%;
     grid-template-columns: 1fr;
     gap: 30px;
 
