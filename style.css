@@ -34,7 +34,7 @@ body {
     "block5"
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1110px) {
     .grid {
         margin: auto;
         min-height: 100vh;
@@ -46,6 +46,23 @@ body {
         grid-template-areas:
             "block1 block1 block2 block5"
             "block3 block4 block4 block5";
+        place-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1109px) {
+    .grid {
+        margin: 72px auto;
+        min-height: 100vh;
+        max-width: 768px;
+        grid-auto-rows: auto;
+        grid-auto-columns: minmax(auto, 256px);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        grid-template-areas:
+            "block1 block1 block2"
+            "block3 block4 block4"
+            "block5 block5 block5 ";
         place-content: center;
     }
 }
