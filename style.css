@@ -107,17 +107,23 @@ img {
     margin-right: 15px;
     height: 28px;
     margin-top: 4px;
+    transition: all 0.8s cubic-bezier(.34,1.56,.71,1.37);
 }
 
-/* figure {
-    margin: 0;
-} */
+img:hover{
+    transform: scale(1.5);
+}
 
 .grid div {
     border-radius: 8px;
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.grid div:hover{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 div p {
@@ -133,13 +139,10 @@ div h1 {
     line-height: 135%;
 }
 
-/* span:nth-child(2n+1) {
-    opacity: 50%;
-    font-size: 85%;
-} */
 span:first-child{
     line-height: 70%;
 }
+
 br+span{
     opacity: 50%;
     font-size: 85%;
